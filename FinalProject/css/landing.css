@@ -1,0 +1,260 @@
+body {
+	background-image: url('../Images/landingbg.png');
+	background-size: cover;
+	font-family: Tahoma;
+}
+
+.button {
+	position: absolute;
+	bottom: 0.8em;
+	left: 1.3em;
+	background-color: white;
+	width: 300px;
+	border-radius: 50px;
+	font-size: 3em;
+	text-align: center;
+	padding: 10px;
+	opacity: 0.5;
+	box-shadow: 0px 0px 10px white;
+}
+
+.button p {
+	margin: 0;
+}
+
+.button:hover {
+	opacity: 1;
+}
+
+a {
+	text-decoration: none;
+	color: #e8e1e1;
+	transition: 0.25s ease;
+}
+
+#here {
+	color: #b30000;
+}
+
+.nav {
+	list-style-type: none;
+	color: #e8e1e1;
+	background-color: #120101;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 15px 10px 15px 60px;
+	font-size: 1.25em;
+}
+
+.nav li {
+	display: inline;
+	padding: 0 10px;
+}
+
+.nav:hover a{
+	color: #333333;
+}
+
+.nav a:hover {
+	box-shadow: 0 2px 0 0 #b30000;
+	color: #e8e1e1;
+}
+
+#logo {
+	position: sticky;
+	top: 8px;
+	left: 0;
+	width: 55px;
+}
+
+p {
+	color: black;
+}
+
+#dust {
+	width: 10px;
+	position: absolute;
+	left: 300px;
+	bottom: 120px;
+	animation: move 3s linear infinite;
+}
+
+#dust1 {
+	width: 10px;
+	position: absolute;
+	left: 70px;
+	bottom: 100px;
+	animation: move1 3s 0.1s linear infinite;
+}
+
+#dust2 {
+	width: 10px;
+	position: absolute;
+	left: 60px;
+	bottom: 60px;
+	animation: move2 3s 0.2s linear infinite;
+}
+
+#dust3 {
+	width: 10px;
+	position: absolute;
+	left: 80px;
+	bottom: 35px;
+	animation: move3 3s 0.4s linear infinite;
+}
+
+#dust4 {
+	width: 10px;
+	position: absolute;
+	left: 160px;
+	bottom: 112px;
+	animation: move4 3s 0.2s linear infinite;
+}
+
+#dust5 {
+	width: 10px;
+	position: absolute;
+	left: 200px;
+	bottom: 112px;
+	animation: move5 3s 0.7s linear infinite;
+}
+
+#dust6 {
+	width: 10px;
+	position: absolute;
+	left: 250px;
+	bottom: 112px;
+	animation: move6 3s 0.5s linear infinite;
+}
+
+#dust7 {
+	width: 10px;
+	position: absolute;
+	left: 350px;
+	bottom: 111px;
+	animation: move7 3s 0.2s linear infinite;
+}
+
+#dust8 {
+	width: 10px;
+	position: absolute;
+	left: 380px;
+	bottom: 65px;
+	animation: move8 1.3s 0.7s linear infinite;
+}
+
+#dust9 {
+	width: 10px;
+	position: absolute;
+	left: 363px;
+	bottom: 40px;
+	animation: move9 1.6s 0.1s linear infinite;
+}
+
+#dust10 {
+	width: 10px;
+	position: absolute;
+	left: 330px;
+	bottom: 34px;
+	animation: move10 1.2s 0.1s linear infinite;
+}
+
+#dust11 {
+	width: 10px;
+	position: absolute;
+	left: 250px;
+	bottom: 34px;
+	animation: move11 1.9s 0.1s linear infinite;
+}
+
+#dust12 {
+	width: 10px;
+	position: absolute;
+	left: 200px;
+	bottom: 34px;
+	animation: move12 1.4s 0.1s linear infinite;
+}
+
+#dust13 {
+	width: 10px;
+	position: absolute;
+	left: 130px;
+	bottom: 34px;
+	animation: move13 1.2s 0.4s linear infinite;
+}
+
+@keyframes move {
+	to {transform: translate(80px, -90px); opacity: 0;}
+}
+
+@keyframes move1 {
+	to {transform: translate(-20px, -90px); opacity: 0;}
+}
+
+@keyframes move2 {
+	to {transform: translate(-50px, 10px); opacity: 0;}
+}
+
+@keyframes move3 {
+	to {transform: translate(-50px, 10px); opacity: 0;}
+}
+
+@keyframes move4 {
+	to {transform: translate(-10px, -100px); opacity: 0;}
+}
+
+@keyframes move5 {
+	to {transform: translate(20px, -80px); opacity: 0;}
+}
+
+@keyframes move6 {
+	to {transform: translate(30px, -50px); opacity: 0;}
+}
+
+@keyframes move7 {
+	to {transform: translate(30px, -20px); opacity: 0;}
+}
+
+@keyframes move8 {
+	to {transform: translate(30px, -20px); opacity: 0;}
+}
+
+@keyframes move9 {
+	to {transform: translate(50px, 30px); opacity: 0;}
+}
+
+@keyframes move10 {
+	to {transform: translate(20px, 20px); opacity: 0;}
+}
+
+@keyframes move11 {
+	to {transform: translate(10px, 30px); opacity: 0;}
+}
+
+@keyframes move12 {
+	to {transform: translate(-40px, 30px); opacity: 0;}
+}
+
+@keyframes move13 {
+	to {transform: translate(-60px, 20px); opacity: 0;}
+}
+
+
+.eyescon div {
+	background-color: #190000;
+	width: 20px;
+	height: 5px;
+	position: absolute;
+	bottom: 180px; 	
+	left: 467px;
+	animation: eyes 2s linear infinite alternate;
+	opacity: 0;
+}
+
+@keyframes eyes {
+	90% {opacity: 0;}
+	100% {opacity: 1;}
+}

@@ -1,0 +1,110 @@
+body{
+	font-family: Tahoma, Sans-Serif;
+	background-image:  url("../images/unkBg.jpg");
+	background-repeat: no repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin:0;
+	padding: 0;
+	overflow-x:hidden;
+}
+
+/*navBar*/
+
+a {
+	text-decoration: none;
+	color: #e8e1e1;
+	transition: 0.25s ease;
+}
+
+#here {
+	color: #b30000;
+}
+
+.nav {
+	list-style-type: none;
+	color: #e8e1e1;
+	background-color: #120101;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 15px 10px 15px 60px;
+	font-size: 1.25em;
+}
+
+.nav li {
+	display: inline;
+	padding: 0 10px;
+}
+
+.nav:hover a{
+	color: #333333;
+}
+
+.nav a:hover {
+	box-shadow: 0 2px 0 0 #b30000;
+	color: #e8e1e1;
+}
+
+#logo {
+	position: sticky;
+	top: 8px;
+	left: 8px;
+	width: 55px;
+}
+
+/*content*/
+.container{
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding-top:2%;
+	background-color: rgba(18, 1, 1, 0.8);
+	width: 80%;
+}
+.container h1{
+	font-size:45px;
+	color: white;
+	margin-right:10%;
+	margin-left:10%;
+	line-height: 70px;
+	text-align: justify;
+}
+
+.container p{
+	font-size:25px;
+	color: white;
+	margin-right:10%;
+	margin-left:10%;
+	line-height: 70px;
+	text-align: justify;
+}
+
+.back {
+	position: fixed;
+	left: 0;
+	top: 10%;
+	font-size: 1em;
+}
+
+.back img {
+	width: 20px;
+	vertical-align: middle;
+}
+
+#loc {
+	width:355px;
+	float:left;
+	padding:20px;
+	margin-left:100px;
+	border-radius: 50px;
+
+@media (max-width:400px) {
+	.nav {
+		font-size:15px;
+		padding-top:25px;
+	}
+}
+		

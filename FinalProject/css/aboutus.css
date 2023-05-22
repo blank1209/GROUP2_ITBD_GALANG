@@ -1,0 +1,170 @@
+body{
+	font-family: Tahoma;
+	margin:0;
+	padding: 0;
+	background-image: url('../Images/aboutusbg.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #e8e1e1;
+	transition: 0.25s ease;
+}
+
+#here {
+	color: #b30000;
+}
+
+.nav {
+	list-style-type: none;
+	color: #e8e1e1;
+	background-color: #120101;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 15px 10px 15px 60px;
+	font-size: 1.25em;
+	z-index: 100;
+}
+
+.nav li {
+	display: inline;
+	padding: 0 10px;
+}
+
+.nav:hover a{
+	color: #333333;
+}
+
+.nav a:hover {
+	box-shadow: 0 2px 0 0 #b30000;
+	color: #e8e1e1;
+}
+
+#logon {
+	position: sticky;
+	top: 8px;
+	left: 8px;
+	width: 55px;
+	z-index: 101;
+}
+
+p {
+	color: black;
+}
+
+
+/*body*/
+.container{
+	background-color:#120101;
+	color:#fffaeb;
+	border-radius: 60px;
+	padding:30px;
+	margin:50px 150px 50px 150px;
+}
+
+.container h1{
+	font-size:45px;
+	padding: 5px 0px 20px 0px;
+}
+
+.container p{
+	text-align:justify;
+	color: #fffaeb;
+	font-size: 25px;
+	line-height: 2;	
+}
+
+#logo {
+	width: 120px;
+	float: left;
+	position: relative;
+	bottom: 20px;
+}
+
+hr {
+	border-color: #fffaeb;
+	background-color: #fffaeb;
+}
+
+.nav a {
+	color: white;
+}
+
+#agta {
+	position: absolute;
+	width: 200px;
+	top: 40px;
+	left: 100px;
+	z-index: -1;
+	rotate: -40deg;
+}
+
+#tiyanak {
+	position: absolute;
+	width: 150px;
+	top: 40px;
+	right: 40px;
+	z-index: -1;
+}
+
+#bakunawa {
+	position: absolute;
+	width: 150px;
+	top: 400px;
+	right: 50px;
+	z-index: -1;
+	rotate: 40deg;
+}
+
+#minokawa {
+	position: absolute;
+	width: 300px;
+	top: 300px;
+	left: 2px;
+	z-index: -1;
+}
+
+#diwata {
+	position: absolute;
+	width: 300px;
+	top: 600px;
+	right: 2px;
+	z-index: -1;
+}
+
+#tikbalang {
+	position: absolute;
+	width: 300px;
+	top: 600px;
+	left: 2px;
+	z-index: -1;
+}
+
+#berbalang {
+	position: absolute;
+	width: 100px;
+	top: -10px;
+	left: 300px;
+	z-index: -1;
+}
+
+#sarangay {
+	position: absolute;
+	width: 100px;
+	top: 50px;
+	left: 500px;
+	z-index: -1;
+}
+
+#batibat {
+	position: absolute;
+	width: 100px;
+	top: 50px;
+	right: 500px;
+	z-index: -1;
+}

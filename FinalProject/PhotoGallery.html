@@ -1,0 +1,559 @@
+<DOCTYPE html> 
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+	<title>Photo Gallery</title> 
+	<style>
+
+	body {
+	font-family: Tahoma, Sans-Serif;
+  background-image: url("Images/PGBG.jpeg");
+	background-attachment: fixed;
+  background-size:cover;
+	color:#423d34;
+  }
+  h2 {
+    font-family: Pangolin ,sans-serif;
+    font-size: 100px;
+    margin: 100px;
+    color:red;
+  }
+  .flip-card {
+  background-color: transparent;
+  width: 330px;
+  height: 330px;
+  border: 2px solid #f1f1f1;
+  perspective: 1000px;
+  float:left;
+  margin: 30 10 0 10;
+  padding: center;
+  }
+  .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  }
+  .flip-card-front {
+  background-color: #584c4c;
+  color: black;
+  }
+  .flip-card-back {
+  background-color: rgb(41, 44, 47);
+  color: white;
+  transform: rotateY(180deg);
+  font-size: 25px;
+  font-family: 'By the way',sans-serif;
+  -webkit-text-stroke:1px red;
+  }
+  a {
+	text-decoration: none;
+	color: #e8e1e1;
+	transition: 0.25s ease;
+}
+
+#hs1 {
+	margin-top: 200px;
+}
+
+#here {
+	color: #b30000;
+}
+
+.nav {
+	list-style-type: none;
+	color: #e8e1e1;
+	background-color: #120101;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 15px 10px 15px 60px;
+	font-size: 1.25em;
+	z-index: 101;
+}
+
+.nav li {
+	display: inline;
+	padding: 0 10px;
+}
+
+.nav:hover a{
+	color: #333333;
+}
+
+.nav a:hover {
+	box-shadow: 0 2px 0 0 #b30000;
+	color: #e8e1e1;
+}
+
+#logo {
+	position: fixed;
+	top: 8px;
+	left: 8px;
+width: 55px;
+z-index: 102;
+}
+.t{
+  margin-left: 14%;
+}
+
+		#topbutton {
+			opacity: 0.7;
+		}
+		
+		#topbutton:hover {
+			opacity: 1;
+		}
+		
+		#link {
+			opacity: 0.7;
+		}
+		
+		#link:hover {
+			opacity: 1;
+		}
+
+	</style>
+</head>
+
+
+<body> 
+	
+	
+	<div style="column-count:3;height:500px;margin:100px 20px;text-align:center;">
+		<a id="link" href="#soil" style="position:relative;">
+			<img src="Images/soilbg.png" style="width:450px;height:300px;border-radius:150px;box-shadow:5px 5px 50px black;">
+			<div style="position:absolute;left:0;right:0;margin-left:auto;margin-right:auto;bottom:600%;background-color:rgba(0,0,0,0.5);width:300px;border-radius:100px;box-shadow:5px 5px 5px black;">
+				<p style="font-family:Tahoma, sans-serif;font-size:1.5em;">SOIL CREATURES</p>
+			</div>
+		</a>
+		
+		<a id="link" href="#water" style="position:relative;">
+			<img src="Images/mermaid.jpg" style="width:450px;height:300px;border-radius:150px;box-shadow:5px 5px 50px black;">
+			<div style="position:absolute;left:0;right:0;margin-left:auto;margin-right:auto;bottom:600%;background-color:rgba(0,0,0,0.5);width:250px;border-radius:100px;box-shadow:5px 5px 5px black;">
+				<p style="font-family:Tahoma, sans-serif;font-size:1.5em;">WATER CREATURES</p>
+			</div>
+		</a>
+		
+		<a id="link" href="#air" style="position:relative;">
+			<img src="Images/airbg.jpg" style="width:450px;height:300px;border-radius:150px;box-shadow:5px 5px 50px black;">
+			<div style="position:absolute;left:0;right:0;margin-left:auto;margin-right:auto;bottom:600%;background-color:rgba(0,0,0,0.5);width:240px;border-radius:100px;box-shadow:5px 5px 5px black;">
+				<p style="font-family:Tahoma, sans-serif;font-size:1.5em;">AIR CREATURES</p>
+			</div>
+		</a>
+	</div>
+
+	<div class="gotop" style="width:100px;position:fixed;right:0;bottom:0;text-align:right;margin-right:5px;">
+		<a id="topbutton" href="#top">
+			<img src="Images/top.png" style="width:50%;margin-right:10px;border-radius:50%;box-shadow:0px 5px 5px black;">
+			<p style="line-height:0px;margin-top:5px;text-shadow:0px 5px 5px black;">Go to Top</p>
+		</a>
+	</div>
+	
+  <ul class="nav">
+		<a href="landing.html"><li>Home</li></a>
+		<a href="library.html"><li>Contents</li></a>
+		<a href="aboutus.html"><li>About Us</li></a>
+		<a href="contactUs.html"><li>Contact Us</li></a>
+		<a href="PhotoGallery.html"><li>Photo Gallery</li></a>
+		<a href="myth_aboutTheAuthor.html"><li>About the Author</li></a>
+	</ul>
+	<img src="Images/logo.png" id="logo">
+  <div class="t">
+  <div class="Creatures">
+    <h2 id="soil">Creatures of the Soil</h2>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/agta.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back" font-size: 50px;>
+            <h1>Agta</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/alan.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Alan</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/amalanhig.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Amalanhig</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/amomongo.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Amomongo</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/anggitay.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Anggitay</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/balbal.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Bal-Bal</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/batibat.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>batibat</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/berbalang.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Berbalang</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/bungisngis.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Bungisngis</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/busaw.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Busaw</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/dalaketnon.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Dalaketnon</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/diwata.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Diwata</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/dwende.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Dwende</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/kapre.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Kapre</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/mambabarang.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Mambabarang</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/mangkukulam.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Mangkukulam</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/multo.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Multo</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/nuno.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Nuno sa Punso</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/pugot.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Pugot</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/santelmo.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Santelmo</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/sarangay.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Sarangay</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/sigbin.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Sigbin</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/tikbalang.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Tikbalang</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/tiyanak.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Tiyanak</h1> 
+          </div>
+        </div>
+      </div>
+
+
+	<h2>Creatures of the Water</h2>
+      <div class="flip-card" id="water">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/berberoka.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Berberoka</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/kataw.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Kataw</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/sirena.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Sirena</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/siyokoy.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Siyokoy</h1> 
+          </div>
+        </div>
+      </div>
+	  
+
+
+      <div style="margin-top:900px;"><h2 id="air">Creatures of the Air</h2></div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/bakunawa.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Bakunawa</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/garuda.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Garuda</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/manananggal.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Manananggal</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/manaul.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Manaul</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/minokawa.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Minokawa</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/sarimanok.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Sarimanok</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/tigmamanukan.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Tigmamanukan</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/wakwak.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Wakwak</h1> 
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Images/ekek.png" alt="Avatar" style="width:100%; height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Ekek</h1> 
+          </div>
+        </div>
+      </div>
+    </div>
+	</div>
+</body>
+</html>

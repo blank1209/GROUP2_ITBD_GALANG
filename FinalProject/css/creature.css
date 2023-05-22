@@ -1,0 +1,240 @@
+body {
+	font-family: Tahoma, Sans-Serif;
+	background-image: url('../Images/aboutusbg.png');
+	background-size: cover;
+	color:#423d34;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: #e8e1e1;
+	transition: 0.25s ease;
+}
+
+#here {
+	color: #b30000;
+}
+
+.nav {
+	list-style-type: none;
+	color: #e8e1e1;
+	background-color: #120101;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 15px 10px 15px 60px;
+	font-size: 1.25em;
+}
+
+.nav li {
+	display: inline;
+	padding: 0 10px;
+}
+
+.nav:hover a{
+	color: #333333;
+}
+
+.nav a:hover {
+	box-shadow: 0 2px 0 0 #b30000;
+	color: #e8e1e1;
+}
+
+#logo {
+	position: sticky;
+	top: 8px;
+	left: 8px;
+	width: 55px;
+}
+
+.container {
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	margin-top: -2px;
+	width: 79%;
+}
+
+#book {
+	width: 97%;
+}
+
+.creaturepic {
+	width: 300px;
+}
+
+#name {
+	font-family: 'Patrick Hand', Sans-Serif;
+	font-size: 3em;
+	margin: 0 0 20px 0;
+}
+
+.left {
+	position: absolute;
+	width: 35%;
+	top: 50px;
+	left: 150px;
+	text-align: center;
+}
+
+.right {
+	position: absolute;
+	width: 35%;
+	top: 50px;
+	right: 170px;
+	text-align: justify;
+	font-family: 'Gochi Hand', Sans-Serif;
+	font-size:1.25em;
+}
+
+#ability{
+	font-family: 'Gochi Hand', Sans-Serif;
+	text-align: left;
+	font-size:1.25em;
+}
+
+#ability ul {
+	margin: 0;
+}
+.bookscon {
+	position: absolute;
+	top: 56px;
+	left: -210px;
+	background-color: #120101;
+	width: 230px;
+	border-radius: 20px;
+	padding: 10px 20px 10px 20px;
+	opacity: 0.8;
+	transition: 0.4s ease;
+}
+
+.bookscon:hover {
+	left: -50px;
+	opacity: 0.9;
+}
+
+.soil {
+	float: left;
+	color: white;
+	font-size: 2em;
+	margin-top: 25%;
+	text-align: center;
+}
+
+.soil img {
+	width: 30px;
+}
+
+.books {
+	float: left;
+	line-height: 0;
+	transition: 0.25s ease;
+	width: 171px;
+	padding-right: 29px;
+}
+
+.books img {
+	width: 165px;
+	transition: 0.25s ease;
+}
+
+.books img:hover {
+	transform: translateX(20px);
+}
+
+.bookwcon {
+	position: absolute;
+	top: 56px;
+	right: -210px;
+	background-color: #120101;
+	width: 230px;
+	border-radius: 20px;
+	padding: 10px 20px 10px 20px;
+	opacity: 0.8;
+	transition: 0.4s ease;
+}
+
+.bookwcon:hover {
+	right: -50px;
+	opacity: 0.9;
+}
+
+.water {
+	float: left;
+	color: white;
+	font-size: 2em;
+	text-align: center;
+}
+
+.water img {
+	width: 30px;
+	rotate: 180deg;
+}
+
+.bookw {
+	float: left;
+	line-height: 0;
+	transition: 0.25s ease;
+	width: 171px;
+	padding-left: 29px;
+	padding-top: 50px;
+}
+
+.bookw img {
+	width: 171px;
+	transition: 0.25s ease;
+}
+
+.bookw img:hover {
+	transform: translateX(-20px);
+}
+
+.bookacon {
+	position: absolute;
+	top: 400px;
+	right: -210px;
+	background-color: #120101;
+	width: 230px;
+	border-radius: 20px;
+	padding: 10px 20px 10px 20px;
+	opacity: 0.8;
+	transition: 0.4s ease;
+}
+
+.bookacon:hover {
+	right: -50px;
+	opacity: 0.9;
+}
+
+.air {
+	float: left;
+	color: white;
+	font-size: 2em;
+	text-align: center;
+	margin-top: 20%;
+}
+
+.air img {
+	width: 30px;
+	rotate: 180deg;
+}
+
+.booka {
+	float: left;
+	line-height: 0;
+	transition: 0.25s ease;
+	width: 171px;
+	padding-left: 29px;
+}
+
+.booka img {
+	width: 171px;
+	transition: 0.25s ease;
+}
+
+.booka img:hover {
+	transform: translateX(-20px);
+}
